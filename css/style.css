@@ -1,0 +1,357 @@
+
+:root {
+	--background: hsl(0, 0%, 33%);
+	--primary: hsl(0, 0%, 100%);
+
+	--side-1: rgba(250, 255, 91, 0.8);
+	--side-2: rgba(94, 255, 91, 0.8);
+	--side-3: rgba(91, 255, 255, 0.8);
+	--side-4: rgba(255, 91, 219, 0.8);
+	--side-5: rgba(91, 94, 255, 0.8);
+	--side-6: rgba(255, 91, 91, 0.8);
+
+	--rotateY: 0deg;
+}
+
+
+html, * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--background);
+	font-family: 'Roboto', sans-serif;
+	padding: 1rem;
+	width: 100%;
+	height: 100vh;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+/* -------------------------- viewport of 3d object ------------------------- */
+
+.viewport {
+	background: lightgray;
+	width: clamp(10rem, 100%, 40rem);
+	aspect-ratio: 1/1;
+	position: relative;
+	perspective: 600px;
+	display: grid;
+
+	overflow: hidden;
+	container-type: size;
+}
+
+
+/* ---------------------------- 3d object container -------------------------- */
+
+.machine {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+
+	transform-style: preserve-3d;
+
+	transform-origin: center center 0cqw;
+
+	rotate: y var(--rotateY);
+	transform: translateZ(10em);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  main body                                 */
+/* -------------------------------------------------------------------------- */
+
+.machine > ul:nth-of-type(1) {
+	width: 50cqw;
+	height: 50cqw;
+	transform-style: preserve-3d;
+	position: absolute;
+
+	transform: translateZ(-25cqw);
+	transition: transform 1s, rotate 1s;
+	transform-origin: center center 25cqw;
+}
+
+
+.machine > ul:nth-of-type(1) > li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid var(--background);
+
+	display: grid;
+	place-items: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+
+/* front */
+.machine > ul:nth-of-type(1) > li:nth-of-type(1) {
+	transform: rotateY(0deg) translateZ(25cqw);
+	background: var(--side-1);
+}
+
+/* back */
+.machine > ul:nth-of-type(1) > li:nth-of-type(2) {
+	transform: rotateY(180deg) translateZ(25cqw);
+	background: var(--side-2);
+}
+
+/* right */
+.machine > ul:nth-of-type(1) > li:nth-of-type(3) {
+	transform: rotateY(90deg) translateZ(25cqw);
+	background: var(--side-3);
+}
+
+/* left */
+.machine > ul:nth-of-type(1) > li:nth-of-type(4) {
+	transform: rotateY(-90deg) translateZ(25cqw);
+	background: var(--side-4);
+}
+
+/* top */
+.machine > ul:nth-of-type(1) > li:nth-of-type(5) {
+	transform: rotateX(90deg) translateZ(25cqw);
+	background: var(--side-5);
+}
+
+/* bottom */
+.machine > ul:nth-of-type(1) > li:nth-of-type(6) {
+	transform: rotateX(-90deg) translateZ(25cqw);
+	background: var(--side-6);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                drawer shape                                */
+/* -------------------------------------------------------------------------- */
+
+.machine > ul:nth-of-type(2) {
+	width: 15cqw;
+	height: 10cqw;
+	transform-style: preserve-3d;
+	position: absolute;
+
+	transform: translateZ(-4.5cqw) translateX(-17cqw) translateY(-19.5cqw);
+	transition: transform 1s, rotate 1s;
+	transform-origin: center center 25cqw;
+}
+
+.machine > ul:nth-of-type(2) > li {
+	position: absolute;
+	border: 2px solid red;
+}
+
+
+
+/* checkbox area */
+.machine > ul:nth-of-type(2) > li:nth-of-type(1) {
+	transform: rotateY(0deg) translateZ(5.1cqw);
+	background: var(--side-1);
+	width: 100%;
+	height: 100%;
+}
+
+.machine > ul:nth-of-type(2) > li:nth-of-type(1) > label {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: red;
+}
+
+.machine > ul:nth-of-type(2) > li:nth-of-type(1) > input {
+	display: none;
+}
+
+.machine > ul:nth-of-type(2):has(> li:nth-of-type(1) input:checked)  {
+	transform: translateZ(3.5cqw) translateX(-17cqw) translateY(-19.5cqw);
+}
+
+
+
+/* front */
+.machine > ul:nth-of-type(2) > li:nth-of-type(2) {
+	transform: rotateY(0deg) translateZ(5cqw);
+	background: var(--side-1);
+	width: 100%;
+	height: 100%;
+}
+
+/* back */
+.machine > ul:nth-of-type(2) > li:nth-of-type(3) {
+	transform: rotateY(180deg) translateZ(5cqw);
+	background: var(--side-2);
+	width: 100%;
+	height: 100%;
+}
+
+/* right */
+.machine > ul:nth-of-type(2) > li:nth-of-type(4) {
+	transform: rotateY(90deg) translateZ(10cqw);
+	background: var(--side-3);
+	width: 10cqw;
+	height: 100%;
+}
+
+/* left */
+.machine > ul:nth-of-type(2) > li:nth-of-type(5) {
+	transform: rotateY(-90deg) translateZ(5cqw);
+	background: var(--side-4);
+	width: 10cqw;
+	height: 100%;
+}
+
+/* top */
+.machine > ul:nth-of-type(2) > li:nth-of-type(6) {
+	transform: rotateX(90deg) translateZ(5cqw);
+	background: var(--side-5);
+	width: 100%;
+	height: 100%;
+}
+
+/* bottom */
+.machine > ul:nth-of-type(2) > li:nth-of-type(7) {
+	transform: rotateX(-90deg) translateZ(5cqw);
+	background: var(--side-6);
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                loader door                                 */
+/* -------------------------------------------------------------------------- */
+
+.machine > ul:nth-of-type(4) {
+	width: 5cqw;
+	height: 10cqw;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateZ(-10cqw);
+	transition: 1s rotate;
+	transform-origin: -190% 50%;
+}
+
+.machine > ul:nth-of-type(4) > li {
+	position: absolute;
+	border: 2px solid red;
+	width: 100%;
+	height: 100%;
+
+	transform-origin: 50% 50% 12cqw;
+}
+
+/* ------------------------------ sides outside ----------------------------- */
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(1) {
+	rotate: 0deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-1);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(2) {
+	rotate: 45deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-2);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(3) {
+	rotate: 90deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-3);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(4) {
+	rotate: 135deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-4);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(5) {
+	rotate: 180deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-5);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(6) {
+	rotate: 225deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-6);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(7) {
+	rotate: 270deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-7);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(8) {
+	rotate: 315deg;
+	transform: rotateY(90deg);
+	background-color: var(--side-8);
+}
+
+
+/* -------------------------------- top side -------------------------------- */
+
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(9) {
+	transform: translateY(-30%) translateX(-40%) translateZ(14.5cqw);
+	background: var(--side-6);
+	width: 24.5cqw;
+	height: 24.5cqw;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(9) > label {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: red;
+}
+
+.machine > ul:nth-of-type(4) > li:nth-of-type(9) > input {
+	display: none;
+}
+
+.machine > ul:nth-of-type(4):has(> li:nth-of-type(9) input:checked)  {
+	rotate: Y -90deg;
+}
+
+
+
+
+
+
+.origin::after {
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	width: .5rem;
+	height: .5rem;
+	content: '';
+	background-color: black;
+	border-radius: 50%;
+	transform: translateX(725%) translateY(-410%) translateZ(0rem);
+}

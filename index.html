@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>        
+        <section class="viewport">
+
+            <article class="machine">
+                <!-- main shape -->
+                <ul>
+                    <li>front</li>
+                    <li>back</li>
+                    <li>right</li>
+                    <li>left</li>
+                    <li>top</li>
+                    <li>bottom</li>
+                </ul>
+
+                <!-- drawer shape -->
+                <ul>
+                    <li>                     
+                        <input type="checkbox" id="checkbox-drawer">
+                        <label for="checkbox-drawer">drawer</label>
+                    </li>
+                    <li>front</li>
+                    <li>back</li>
+                    <li>right</li>
+                    <li>left</li>
+                    <li>top</li>
+                    <li>bottom</li>
+                </ul>
+
+                
+                <!-- loader inside -->
+                <ul>
+                    
+                    <!-- sides -->
+                    <li>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <!-- top pieces -->
+                    <li>
+                        <ul>
+                            <li class="origin"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <!-- inside pieces -->
+                    <li>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- loader door -->
+                <ul>
+                    <li>side-1</li>
+                    <li>side-2</li>
+                    <li>side-3</li>
+                    <li>side-4</li>
+                    <li>side-5</li>
+                    <li>side-6</li>
+                    <li>side-7</li>
+                    <li>side-8</li>
+                    <li>                        <input type="checkbox" id="checkbox-loader">
+                    <label for="checkbox-loader">loader</label></li>
+                </ul>
+            </article>
+
+        </section>
+
+        <input type="range" min="0" max="360" value="15" id="rotateY">
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
