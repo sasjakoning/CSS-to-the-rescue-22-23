@@ -149,23 +149,40 @@ ul {
 }
 
 
+/* -------------------------------------------- */
+/*                 Control panel                */
+/* -------------------------------------------- */
+
+.machine > ul:nth-of-type(2) > li > article{
+	width: 30cqw;
+	height: 10cqw;
+	transform-style: preserve-3d;
+	position: absolute;
+	background-color: blue;
+
+	transform: translateZ(-0cqw) translateX(-5.5cqw) translateY(-24.5cqw);
+	transition: transform 1s, rotate 1s;
+	transform-origin: center center 25cqw;
+}
+
 
 /* -------------------------------------------- */
 /*                 Drawer shape                 */
 /* -------------------------------------------- */
 
-.machine > ul:nth-of-type(2) {
+
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) {
 	width: 15cqw;
 	height: 10cqw;
 	transform-style: preserve-3d;
 	position: absolute;
 
-	transform: translateZ(-4.5cqw) translateX(-17cqw) translateY(-19.5cqw);
+	transform: translateZ(-4.5cqw) translateX(-24.5cqw) translateY(-24.5cqw);
 	transition: transform 1s, rotate 1s;
 	transform-origin: center center 25cqw;
 }
 
-.machine > ul:nth-of-type(2) > li {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li {
 	position: absolute;
 	border: 2px solid red;
 }
@@ -173,32 +190,32 @@ ul {
 
 
 /* checkbox area */
-.machine > ul:nth-of-type(2) > li:nth-of-type(1) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(1) {
 	transform: rotateY(0deg) translateZ(5.1cqw);
 	background: var(--side-1);
 	width: 100%;
 	height: 100%;
 }
 
-.machine > ul:nth-of-type(2) > li:nth-of-type(1) > label {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(1) > label {
 	width: 100%;
 	height: 100%;
 	display: block;
 	background: red;
 }
 
-.machine > ul:nth-of-type(2) > li:nth-of-type(1) > input {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(1) > input {
 	display: none;
 }
 
-.machine > ul:nth-of-type(2):has(> li:nth-of-type(1) input:checked)  {
-	transform: translateZ(3.5cqw) translateX(-17cqw) translateY(-19.5cqw);
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1):has(> li:nth-of-type(1) input:checked)  {
+	transform: translateZ(3.5cqw) translateX(-24.5cqw) translateY(-24.5cqw);
 }
 
 
 
 /* front */
-.machine > ul:nth-of-type(2) > li:nth-of-type(2) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(2) {
 	transform: rotateY(0deg) translateZ(5cqw);
 	background: var(--side-1);
 	width: 100%;
@@ -206,7 +223,7 @@ ul {
 }
 
 /* back */
-.machine > ul:nth-of-type(2) > li:nth-of-type(3) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(3) {
 	transform: rotateY(180deg) translateZ(5cqw);
 	background: var(--side-2);
 	width: 100%;
@@ -214,7 +231,7 @@ ul {
 }
 
 /* right */
-.machine > ul:nth-of-type(2) > li:nth-of-type(4) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(4) {
 	transform: rotateY(90deg) translateZ(10cqw);
 	background: var(--side-3);
 	width: 10cqw;
@@ -222,7 +239,7 @@ ul {
 }
 
 /* left */
-.machine > ul:nth-of-type(2) > li:nth-of-type(5) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(5) {
 	transform: rotateY(-90deg) translateZ(5cqw);
 	background: var(--side-4);
 	width: 10cqw;
@@ -230,7 +247,7 @@ ul {
 }
 
 /* top */
-.machine > ul:nth-of-type(2) > li:nth-of-type(6) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(6) {
 	transform: rotateX(90deg) translateZ(5cqw);
 	background: var(--side-5);
 	width: 100%;
@@ -238,7 +255,7 @@ ul {
 }
 
 /* bottom */
-.machine > ul:nth-of-type(2) > li:nth-of-type(7) {
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1) > li:nth-of-type(7) {
 	transform: rotateX(-90deg) translateZ(5cqw);
 	background: var(--side-6);
 	width: 100%;
@@ -354,6 +371,10 @@ ul {
 /*                 Loader inside                */
 /* -------------------------------------------- */
 
+.machine > ul:nth-of-type(3){
+	position: absolute;
+}
+
 
 /* ------------------ Outside ----------------- */
 
@@ -427,6 +448,7 @@ ul {
 }
 
 /* ----------------- Top side ----------------- */
+
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(2) ul {
 	width: 2.5cqw;
