@@ -46,7 +46,7 @@ ul {
 
 
 
-/* -------------------------- viewport of 3d object ------------------------- */
+/* ----------- viewport of 3d object ---------- */
 
 .viewport {
 	background: lightgray;
@@ -61,7 +61,7 @@ ul {
 }
 
 
-/* ---------------------------- 3d object container -------------------------- */
+/* ------------ 3d object container ----------- */
 
 .machine {
 	width: 100%;
@@ -83,9 +83,9 @@ ul {
 }
 
 
-/* -------------------------------------------------------------------------- */
-/*                                  main body                                 */
-/* -------------------------------------------------------------------------- */
+/* -------------------------------------------- */
+/*                   Main body                  */
+/* -------------------------------------------- */
 
 .machine > ul:nth-of-type(1) {
 	width: 50cqw;
@@ -150,9 +150,9 @@ ul {
 
 
 
-/* -------------------------------------------------------------------------- */
-/*                                drawer shape                                */
-/* -------------------------------------------------------------------------- */
+/* -------------------------------------------- */
+/*                 Drawer shape                 */
+/* -------------------------------------------- */
 
 .machine > ul:nth-of-type(2) {
 	width: 15cqw;
@@ -248,9 +248,9 @@ ul {
 
 
 
-/* -------------------------------------------------------------------------- */
-/*                                loader door                                 */
-/* -------------------------------------------------------------------------- */
+/* -------------------------------------------- */
+/*                  Loader door                 */
+/* -------------------------------------------- */
 
 .machine > ul:nth-of-type(4) {
 	width: 5cqw;
@@ -271,7 +271,7 @@ ul {
 	transform-origin: 50% 50% 12.07cqw;
 }
 
-/* ------------------------------ sides outside ----------------------------- */
+/* --------------- Sides outside -------------- */
 
 .machine > ul:nth-of-type(4) > li:nth-of-type(1) {
 	rotate: 0deg;
@@ -322,11 +322,11 @@ ul {
 }
 
 
-/* -------------------------------- top side -------------------------------- */
+/* ----------------- Top side ----------------- */
 
 
 .machine > ul:nth-of-type(4) > li:nth-of-type(9) {
-	display: none;
+	/* display: none; */
 	transform: translateY(-30%) translateX(-40%) translateZ(14.5cqw);
 	background: var(--side-6);
 	width: 24.5cqw;
@@ -350,12 +350,12 @@ ul {
 }
 
 
-/* -------------------------------------------------------------------------- */
-/*                                Loader inside                               */
-/* -------------------------------------------------------------------------- */
+/* -------------------------------------------- */
+/*                 Loader inside                */
+/* -------------------------------------------- */
 
 
-/* --------------------------------- outside -------------------------------- */
+/* ------------------ Outside ----------------- */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(1) ul {
 	width: 5cqw;
@@ -376,7 +376,7 @@ ul {
 	transform-origin: 50% 50% 10.864cqw;
 }
 
-/* ------------------------------ Sides outside ----------------------------- */
+/* --------------- Sides outside -------------- */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(1) {
 	rotate: 0deg;
@@ -426,28 +426,32 @@ ul {
 	background-color: var(--side-8);
 }
 
-/* ----------------------------------- top ---------------------------------- */
+/* ----------------- Top side ----------------- */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(2) ul {
-	width: 5cqw;
-	height: 7cqw;
+	width: 2.5cqw;
+	height: 9cqw;
 	position: absolute;
 	transform-style: preserve-3d;
-    transform: translateZ(5cqw) translateX(-50%) translateY(-50%);
+    transform: translateZ(3.35cqw) translateX(-50%) translateY(-50%);
 	transition: 1s rotate;
-	transform-origin: -190% 50%;
+	/* transform-origin: 50% 50%; */
 }
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(2) > ul > li {
 	position: absolute;
-	border: 2px solid red;
-	width: 100%;
+	border-left: 2.5cqw solid #555;
+	border-top: .5cqw solid transparent;
+	border-bottom: .5cqw solid transparent;
 	height: 100%;
 
 	transform-origin: 50% 50% 8.45cqw;
+	transform: translateX(-9.65cqw);
+
+	background-color: transparent !important;
 }
 
-/* ------------------------------ Sides outside ----------------------------- */
+/* --------------- Sides outside -------------- */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(1) {
 	rotate: 0deg;
@@ -492,14 +496,14 @@ ul {
 
 
 
-/* --------------------------------- inside --------------------------------- */
+/* ------------------ Inside ------------------ */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(3) ul {
 	width: 5cqw;
 	height: 7cqw;
 	position: absolute;
 	transform-style: preserve-3d;
-    transform: translateZ(-10cqw) translateX(-50%) translateY(-50%);
+    transform: translateZ(-7.5cqw) translateX(-50%) translateY(-50%);
 	transition: 1s rotate;
 	transform-origin: -190% 50%;
 }
@@ -513,7 +517,7 @@ ul {
 	transform-origin: 50% 50% 8.45cqw;
 }
 
-/* ------------------------------ Sides outside ----------------------------- */
+/* --------------- Sides inside --------------- */
 
 .machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(1) {
 	rotate: 0deg;
@@ -565,7 +569,36 @@ ul {
 
 
 
+/* ----- Inside shape (inside the machine) ---- */
 
+.machine > ul:nth-of-type(3) > li:nth-of-type(4) {
+	width: 18cqw;
+	height: 18cqw;
+	position: absolute;
+	transform-style: preserve-3d;
+    transform: translateZ(.1cqw) translateX(-50%) translateY(-50%);
+	transition: 1s rotate;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.machine > ul:nth-of-type(3) > li:nth-of-type(4):before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+	background: url(../images-readme/washing-machine-ref.jpg) no-repeat center center;
+	background-size: cover;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
 
 
 
