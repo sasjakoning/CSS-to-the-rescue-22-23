@@ -159,10 +159,55 @@ ul {
 	transform-style: preserve-3d;
 	position: absolute;
 	background-color: blue;
+	display: flex;
+	justify-content: space-between;
 
 	transform: translateZ(-0cqw) translateX(-5.5cqw) translateY(-24.5cqw);
 	transition: transform 1s, rotate 1s;
 	transform-origin: center center 25cqw;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section {
+	background-color: orange;
+	width: 50%;
+	padding: 1cqw;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div {
+	width: 8cqw;
+	height: 3cqw;
+	position: relative;
+
+	background-color: aqua;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "Text";
+	font-size: 2cqw;
+	left: 1cqw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1) {
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 100%; /* Full-width */
+	height: 2cqw;
+	background: green;
+	/* outline: none; */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 3cqw; /* Set a specific slider handle width */
+	height: 2cqw;
+	background: #04AA6D; /* Green background */
+	cursor: pointer; /* Cursor on hover */
 }
 
 
