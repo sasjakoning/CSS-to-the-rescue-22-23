@@ -1,0 +1,8 @@
+<svg width='300' height='300'>
+  <defs>
+    <clipPath id='cp' clipPathUnits='objectBoundingBox'>
+      <path id="clip" fill-rule="evenodd" clip-rule="evenodd" d="M16 0H0V16H16V0ZM2 5.5L5.5 2H10.5L14 5.5V10.5L10.5 14H5.5L2 10.5V5.5Z" fill="black"/>
+    </clipPath>
+  </defs>
+  <rect class='clip-me' width='300' height='300'/>
+</svg>
