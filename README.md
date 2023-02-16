@@ -75,3 +75,29 @@ The control panel I've chosen is of a washing machine. I was thinking about all 
 Below is the machine I decided to use as reference. I may change some things in the design but this gets the general idea.
 
 <img src="images-readme/washing-machine-ref.jpg" alt="Washing Machine" width="300">
+
+<br>
+<hr>
+<br>
+
+## Guest talk Kilian Valkhof
+
+On thursday 16-02-2022 we had a guest talk by Kilian Valkhof. He talked about his work as a developer at Electron Governance Team and his work on Polyplane. During this talk he mostly showed us HTML/CSS solutions for common Javascript practices.
+
+There were several new technologies and techniques that I found interesting. I'll try to list them below.
+
+- Using `outline: transparent` instead of `outline: none` to remove outlines but still have them be visible for high contrast users
+- Using `datalist` instead of `select` for dropdowns to be able to search through the options and to be able to add custom options that aren't in the list.
+- For `<form>` elements you can use `color-scheme: dark light` to make the form elements adapt to the dark/light mode of the browser without having to set up custom css variables.
+- In most cases, using `loading="lazy"` on images is a good idea to improve performance though it's preferred to not use it for images that are in the viewport on load.
+- You can also use `loading="lazy"` on iframes to improve performance.
+- For improved accessibility you can add `cursor: pointer` to a `<summary>` on hover to make it more clear that it's clickable.
+- You can now create modals using very little Javascript which improves performance and accessibility. You can use `dialog` to create a modal. You can also use `dialog::backdrop` to create a dark background that fades in when the modal opens.
+
+There are also a few features that will become available in the future that I found interesting.
+
+- `Masonry` layouts for grid items. This will allow you to create a grid layout where the items can have different sizes and will automatically be placed in the correct position.
+- `Selectmenu`'s enable better styling for dropdowns and select elements.
+- `Scroll linked animations` will allow you to create animations that are triggered when an element is scrolled into view (very cool).
+
+Alltogether I learned alot from this talk and I'm excited to see what the future of CSS will bring.
