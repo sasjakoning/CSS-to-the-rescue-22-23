@@ -41,6 +41,9 @@
 
                         <!-- control panel -->
                         <article>
+                            <label for="">
+                                <input type="checkbox">
+                            </label>
                             <section>
                                 <!-- text screen -->
                                 <div></div>
@@ -57,14 +60,23 @@
                                 </form>
                             </section>
                             <section>
-                                <div>
-                                    <span></span>
-                                </div>
                                 <form action="#">
-                                    <input type="radio" name="knob" checked>
-                                    <input type="radio" name="knob">
-                                    <input type="radio" name="knob">
-                                    <input type="radio" name="knob">
+                                    <label for="off">
+                                        Off
+                                    </label>
+                                    <input type="radio" id="off" checked>
+                                    <label for="white">
+                                        White
+                                    </label>
+                                    <input type="radio" id="white">
+                                    <label for="color">
+                                        Color
+                                    </label>
+                                    <input type="radio" id="color">
+                                    <label for="hamster">
+                                        HAMSTER
+                                    </label>
+                                    <input type="radio" id="hamster">
                                 </form>
                             </section>
                         </article>
@@ -145,7 +157,7 @@
 
         <input type="range" min="0" max="360" value="15" id="rotateY">
         <input type="range" min="0" max="360" value="15" id="rotateX">
-        <input type="range" min="0" max="30" value="10" id="translateZ">
+        <input type="range" min="0" max="30" value="0" id="translateZ">
     </main>
     <script src="js/script.js"></script>
 </body>
