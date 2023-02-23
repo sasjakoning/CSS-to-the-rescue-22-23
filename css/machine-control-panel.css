@@ -1,0 +1,101 @@
+/* -------------------------------------------- */
+/*                 Control panel                */
+/* -------------------------------------------- */
+
+.machine > ul:nth-of-type(2) > li > article{
+	width: 30cqw;
+	height: 10cqw;
+	transform-style: preserve-3d;
+	position: absolute;
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+
+	transform: translateZ(-0cqw) translateX(-5.5cqw) translateY(-24.5cqw);
+	transition: transform 1s, rotate 1s;
+	transform-origin: center center 25cqw;
+}
+
+.machine > ul:nth-of-type(2) > li > article > label {
+	position: absolute;
+	background-color: red;
+	width: 100%;
+	height: 100%;
+}
+
+.machine > ul:nth-of-type(2) > li > article > label > input {
+	display: none;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section {
+	width: 50%;
+	padding: 1cqw;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div {
+	width: 8cqw;
+	height: 3cqw;
+	position: relative;
+
+	background-color: aqua;
+	margin-bottom: 1cqw;
+
+	container-type: inline-size;
+}
+
+/* screen */
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "Text";
+	word-wrap: break-word;
+	font-size: 16cqw;
+	left: 1cqw;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) {
+	display: flex;
+	gap: 1cqw;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1) {
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 100%; /* Full-width */
+	height: 2cqw;
+	background: green;
+	/* outline: none; */
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 3cqw;
+	height: 2cqw;
+	background: #04AA6D;
+	cursor: pointer;
+}
+
+/* four buttons container */
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) {
+	container-type: size;
+	position: relative;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10cqw;
+	justify-items: start;
+}
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > label {
+	display: flex;
+	font-size: 6cqw;
+	align-items: center;
+	gap: 5cqw;
+}

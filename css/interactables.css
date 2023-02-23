@@ -1,0 +1,59 @@
+
+
+/* --------- Open loader door on click -------- */
+
+.machine > ul:nth-of-type(4):has(> li:nth-of-type(9) input:checked)  {
+	rotate: Y -90deg;
+	transition: rotate .5s;
+	transition-timing-function: cubic-bezier(.17,.67,.57,1.37);
+}
+
+
+
+/* ---- Stop turning anim when door is open --- */
+
+.machine:has(> ul:nth-of-type(4) > li:nth-of-type(9) input:checked) > ul:nth-of-type(3) > li:nth-of-type(4)::before {
+	/* animation: spin 0s linear infinite; */
+	animation-play-state: paused;
+}
+
+
+
+/* ----------- Open loader on click ----------- */
+
+.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1):has(> li:nth-of-type(1) input:checked)  {
+	transform: translateZ(3.5cqw) translateX(-24.5cqw) translateY(-24.5cqw);
+}
+
+
+
+/* ----------- Control panel inputs ----------- */
+
+/* screen input: hamster */
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "HAMSTER";
+}
+
+/* screen input: White */
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(1):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "";
+}
+
+/* screen input: Color */
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(2):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "White";
+}
+
+/* screen input: White */
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(3):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+	content: "Color";
+}
+
+
+
+/* ----- Open bottom compartment on click ----- */
+
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > ul:nth-of-type(5) > li:nth-of-type(2) {
+	rotate: x 90deg;
+	transition: rotate .5s;
+}
