@@ -18,7 +18,9 @@
 
 .machine > ul:nth-of-type(2) > li > article > label {
 	position: absolute;
-	background-color: red;
+	background-color: var(--primary);
+	border-bottom: .5cqw solid var(--secondary);
+	border-left: .5cqw solid var(--secondary);
 	width: 100%;
 	height: 100%;
 }
@@ -37,7 +39,7 @@
 	height: 3cqw;
 	position: relative;
 
-	background-color: aqua;
+	background-color: var(--tertiary);
 	margin-bottom: 1cqw;
 
 	container-type: inline-size;
@@ -48,7 +50,8 @@
 	content: "Text";
 	word-wrap: break-word;
 	font-size: 16cqw;
-	left: 1cqw;
+	left: 10cqw;
+	top: 8cqw;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -79,7 +82,10 @@
 	cursor: pointer;
 }
 
-/* four buttons container */
+
+
+/* ---------- Four buttons container ---------- */
+
 .machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) {
 	container-type: size;
 	position: relative;
@@ -89,7 +95,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	gap: 10cqw;
+	gap: 6cqw;
 	justify-items: start;
 }
 
@@ -98,4 +104,22 @@
 	font-size: 6cqw;
 	align-items: center;
 	gap: 5cqw;
+}
+
+/* give the checkboxes custom styling */
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 10cqw;
+	height: 10cqw;
+	background: var(--secondary);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* when the checkbox is checked, add a blue background */
+
+.machine > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:checked {
+	background: #2196F3;
 }

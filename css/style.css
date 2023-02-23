@@ -16,7 +16,8 @@
 
 	--rotateY: 0deg;
 	--rotateX: 0deg;
-	--translateZ: 9em;
+	--translateZ: 0em;
+	--translateY: 0em;
 }
 
 
@@ -63,7 +64,9 @@ ul {
 }
 
 
-/* ------------ 3d object container ----------- */
+/* -------------------------------------------- */
+/*              3d object container             */
+/* -------------------------------------------- */
 
 .machine {
 	width: 100%;
@@ -77,7 +80,7 @@ ul {
 
 	/* rotate: y var(--rotateY);
 	rotate: x var(--rotateX); */
-	transform: translateZ(var(--translateZ)) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+	transform: translateZ(var(--translateZ)) translateY(var(--translateY)) rotateY(var(--rotateY)) rotateX(var(--rotateX));
 }
 
 .machine ul, .machine li {
@@ -100,4 +103,19 @@ ul {
 	background-color: black;
 	border-radius: 50%;
 	transform: translateX(725%) translateY(-410%) translateZ(0rem);
+}
+
+
+
+/* ------------------ inputs ------------------ */
+
+main { 
+	display: flex;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

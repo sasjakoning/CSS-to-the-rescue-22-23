@@ -70,19 +70,19 @@
                                     <label for="off">
                                         Off
                                     </label>
-                                    <input type="radio" id="off" checked>
+                                    <input type="radio" id="off" name="control" checked>
                                     <label for="white">
                                         White
                                     </label>
-                                    <input type="radio" id="white">
+                                    <input type="radio" id="white" name="control">
                                     <label for="color">
                                         Color
                                     </label>
-                                    <input type="radio" id="color">
+                                    <input type="radio" id="color" name="control">
                                     <label for="hamster">
                                         HAMSTER
                                     </label>
-                                    <input type="radio" id="hamster">
+                                    <input type="radio" id="hamster" name="control">
                                 </form>
                             </section>
                         </article>
@@ -161,9 +161,15 @@
 
         </section>
 
-        <input type="range" min="0" max="360" value="15" id="rotateY">
-        <input type="range" min="0" max="360" value="15" id="rotateX">
-        <input type="range" min="0" max="30" value="0" id="translateZ">
+        <div class="inputs">
+
+            <input type="range" min="0" max="360" value="15" id="rotateY">
+            <input type="range" min="0" max="360" value="15" id="rotateX">
+            <input type="range" min="0" max="30" value="0" id="translateZ">
+            <input type="range" min="0" max="30" value="0" id="translateY">
+
+        </div>
+
     </main>
     <script src="js/script.js"></script>
 </body>

@@ -7,6 +7,9 @@ document.documentElement.style.setProperty('--rotateX', rotateYSlider.value + 'd
 const translateZSlider = document.getElementById('translateZ');
 document.documentElement.style.setProperty('--translateZ', rotateYSlider.value + 'em');
 
+const translateYSlider = document.getElementById('translateY');
+document.documentElement.style.setProperty('--translateY', rotateYSlider.value + 'em');
+
 
 
 // edit the rotateY css variable based on the slider value
@@ -23,5 +26,10 @@ rotateXSlider.addEventListener('input', (e) => {
 
 translateZSlider.addEventListener('input', (e) => {
     document.documentElement.style.setProperty('--translateZ', e.target.value + 'em');
+    }
+);
+
+translateYSlider.addEventListener('input', (e) => {
+    document.documentElement.style.setProperty('--translateY', e.target.value + 'em');
     }
 );
