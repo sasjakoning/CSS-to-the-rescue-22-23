@@ -57,3 +57,25 @@
 	rotate: x 90deg;
 	transition: rotate .5s;
 }
+
+
+
+/* ---------------- Turbo mode ---------------- */
+
+.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) {
+	animation: shake 1s linear infinite;
+}
+ 
+@keyframes shake {
+	0% { transform: rotate(0deg); }
+	10% { transform: rotate(5deg); }
+	20% { transform: rotate(-5deg); }
+	30% { transform: rotate(5deg); }
+	40% { transform: rotate(-5deg); }
+	50% { transform: rotate(5deg); }
+	60% { transform: rotate(-5deg); }
+	70% { transform: rotate(5deg); }
+	80% { transform: rotate(-5deg); }
+	90% { transform: rotate(5deg); }
+	100% { transform: rotate(0deg); }
+}
