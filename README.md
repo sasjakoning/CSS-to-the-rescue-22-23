@@ -111,3 +111,25 @@ Alltogether I learned alot from this talk and I'm excited to see what the future
 The first version of the washing machine was less about the design and more about the functionality. I wanted to make sure I could create the entire machine in 3d and that I could make the buttons work. I used basic colors to fill in the shapes and dove deep into new technologies like the use of `:has()` to create conditional actions( for example when the door is open the laundry should stop rotating) and used container query sizing to get the machine to relatively scale to its parent. this way it would be responsive right off the bat.
 
 <img src="images-readme/v1.jpg" alt="Washing Machine V1" width="300">
+
+<br>
+<hr>
+<br>
+
+## 📚 Version 2 📚
+
+The second version goes even deeper into the functionality of the machine. For development purposes I added sliders that turned the machine around in several directions so I could better see what was going on. I also added a few more buttons to make the machine more interactive. I also added a few more animations and edited colors to make the machine more realistic.
+
+<img src="images-readme/v2.gif" alt="Washing Machine V2" width="300">
+
+<br>
+
+At this point I started to struggle a bit with the complexity of the CSS and the amount of selectors I was using. I decided to split my main CSS file into several component files to make it easier to work with. I also started to use more CSS variables to make it easier to change colors and values in the future.
+
+<br>
+<hr>
+<br>
+
+## 📚 Final version 📚
+
+For the final version of the machine I changed the original pink colors to be more white and realistic. I added metallic colors to the buttons and the machine itself. I added several new interactions and worked with CSS features I had previously not worked with before. These include using filters with hue-rotate to create a color rainbow effect and used more complex gradients to create checkers patterns for the floor.
