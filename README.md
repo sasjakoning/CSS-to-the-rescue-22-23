@@ -101,3 +101,13 @@ There are also a few features that will become available in the future that I fo
 - `Scroll linked animations` will allow you to create animations that are triggered when an element is scrolled into view (very cool).
 
 Alltogether I learned alot from this talk and I'm excited to see what the future of CSS will bring.
+
+<br>
+<hr>
+<br>
+
+## 📚 Version 1 📚
+
+The first version of the washing machine was less about the design and more about the functionality. I wanted to make sure I could create the entire machine in 3d and that I could make the buttons work. I used basic colors to fill in the shapes and dove deep into new technologies like the use of `:has()` to create conditional actions( for example when the door is open the laundry should stop rotating) and used container query sizing to get the machine to relatively scale to its parent. this way it would be responsive right off the bat.
+
+<img src="images-readme/v1.jpg" alt="Washing Machine V1" width="300">
