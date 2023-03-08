@@ -2,7 +2,7 @@
 /*                  Loader door                 */
 /* -------------------------------------------- */
 
-.machine > section > ul:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(4) {
 	width: 5cqw;
 	height: 10cqw;
 	position: absolute;
@@ -12,7 +12,7 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > section > ul:nth-of-type(4) > li {
+main > section > article > section > ul:nth-of-type(4) > li {
 	position: absolute;
 	/* border: 2px solid red; */
 	width: 100%;
@@ -24,42 +24,42 @@
 
 /* --------------- Sides outside -------------- */
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(3) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(5) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(6) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(7) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(8) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
 }
@@ -68,7 +68,7 @@
 /* ----------------- Top side ----------------- */
 
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) {
 	/* display: none; */
 	transform: translateY(-30%) translateX(-40%) translateZ(14.5cqw);
 	width: 24.5cqw;
@@ -77,7 +77,7 @@
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) > label {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) > label {
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -103,12 +103,9 @@
 	25% 100%, 
 	100% 100%, 
 	100% 0%);
-
-
-	/* clip-path: url(../images/octagon-mask.svg#cp); */
 }
 
-.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) > input {
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) > input {
 	display: none;
 }
 
@@ -117,14 +114,14 @@
 /*                 Loader inside                */
 /* -------------------------------------------- */
 
-.machine > section > ul:nth-of-type(3){
+main > section > article > section > ul:nth-of-type(3){
 	position: absolute;
 }
 
 
 /* ------------------ Outside ----------------- */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) ul {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) ul {
 	width: 5cqw;
 	height: 9cqw;
 	position: absolute;
@@ -134,7 +131,7 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) > ul > li {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) > ul > li {
 	position: absolute;
 	border: 2px solid var(--metallic);
 	width: 100%;
@@ -146,42 +143,42 @@
 
 /* --------------- Sides outside -------------- */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(3) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(5) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(6) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(7) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(8) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
 }
@@ -189,7 +186,7 @@
 /* ----------------- Top side ----------------- */
 
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) ul {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) ul {
 	width: 2.5cqw;
 	height: 9cqw;
 	position: absolute;
@@ -199,7 +196,7 @@
 	/* transform-origin: 50% 50%; */
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) > ul > li {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) > ul > li {
 	position: absolute;
 	border-left: 2.5cqw solid var(--metallic);
 	border-top: .5cqw solid transparent;
@@ -214,42 +211,42 @@
 
 /* --------------- Sides outside -------------- */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(1) {
 	rotate: 0deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(2) {
 	rotate: 45deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(3) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(3) {
 	rotate: 90deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(4) {
 	rotate: 135deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(5) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(5) {
 	rotate: 180deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(6) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(6) {
 	rotate: 225deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(7) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(7) {
 	rotate: 270deg;
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(8) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(8) {
 	rotate: 315deg;
 	background: var(--metallic);
 }
@@ -259,7 +256,7 @@
 
 /* ------------------ Inside ------------------ */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) ul {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) ul {
 	width: 5cqw;
 	height: 7cqw;
 	position: absolute;
@@ -269,7 +266,7 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) > ul > li {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) > ul > li {
 	position: absolute;
 	border: 2px solid var(--metallic);
 	width: 100%;
@@ -280,49 +277,49 @@
 
 /* --------------- Sides inside --------------- */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(3) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(5) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(6) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(7) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(8) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
 	background: var(--metallic);
@@ -332,7 +329,7 @@
 
 /* ----- Inside shape (inside the machine) ---- */
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(4) {
 	width: 18cqw;
 	height: 18cqw;
 	position: absolute;
@@ -342,7 +339,7 @@
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.machine > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
+main > section > article > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
     content: "";
     position: absolute;
     width: 200%;

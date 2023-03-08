@@ -2,7 +2,7 @@
 /*                 Control panel                */
 /* -------------------------------------------- */
 
-.machine > section > ul:nth-of-type(2) > li > article{
+main > section > article > section > ul:nth-of-type(2) > li > article{
 	width: 30cqw;
 	height: 10cqw;
 	transform-style: preserve-3d;
@@ -16,7 +16,7 @@
 	transform-origin: center center 25cqw;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > label {
+main > section > article > section > ul:nth-of-type(2) > li > article > label {
 	position: absolute;
 	background: var(--primary);
 	border-bottom: .5cqw solid var(--secondary);
@@ -25,17 +25,17 @@
 	height: 100%;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > label > input {
+main > section > article > section > ul:nth-of-type(2) > li > article > label > input {
 	display: none;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > section {
+main > section > article > section > ul:nth-of-type(2) > li > article > section {
 	width: 50%;
 	padding: 1cqw;
 	z-index: 10;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div {
 	width: 8cqw;
 	height: 3cqw;
 	position: relative;
@@ -47,7 +47,7 @@
 }
 
 /* screen */
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "Text";
 	word-wrap: break-word;
 	font-size: 16cqw;
@@ -60,7 +60,7 @@
 }
 
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1), .machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1), main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(2) {
 	display: flex;
 	gap: 1cqw;
 	transform: translateY(0.15rem);
@@ -69,7 +69,7 @@
 
 /* ------------------ slider ------------------ */
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1) {
 	-webkit-appearance: none;
 	appearance: none;
 
@@ -79,7 +79,7 @@
 	/* outline: none; */
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)::-webkit-slider-thumb {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
 	width: 3cqw;
@@ -91,7 +91,7 @@
 
 /* --------------- Turbo button --------------- */
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2) {
 	-webkit-appearance: none;
 	appearance: none;
 	width: 3cqw;
@@ -105,12 +105,12 @@
 
 /* ---------- Four buttons container ---------- */
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) {
 	container-type: size;
 	position: relative;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -118,7 +118,7 @@
 	justify-items: start;
 }
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > label {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > label {
 	display: flex;
 	font-size: 6cqw;
 	align-items: center;
@@ -127,7 +127,7 @@
 
 /* give the checkboxes custom styling */
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input {
 	-webkit-appearance: none;
 	appearance: none;
 	width: 10cqw;
@@ -139,7 +139,7 @@
 
 /* when the checkbox is checked, add a blue background */
 
-.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:checked {
+main > section > article > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:checked {
 	background: var(--accent);
 	filter: drop-shadow(0 0 .2rem var(--accent));
 }

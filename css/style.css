@@ -50,7 +50,7 @@ ul {
 
 /* ----------- viewport of 3d object ---------- */
 
-.viewport {
+main > section:nth-of-type(1) {
 	/* background: var(--background); */
 	width: clamp(10rem, 100%, 60rem);
 	height: clamp(10rem, 100%, 100vh);
@@ -68,7 +68,7 @@ ul {
 /*              3d object container             */
 /* -------------------------------------------- */
 
-.machine {
+main > section > article {
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -83,7 +83,7 @@ ul {
 	transform: translateZ(var(--translateZ)) translateY(var(--translateY)) rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateX(var(--translateX));
 }
 
-.machine > section {
+main > section > article > section {
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -93,33 +93,13 @@ ul {
 	transform-origin: center center 0cqw;
 }
 
-.machine ul, .machine li {
+main > section > article ul, main > section > article li {
 	transform-style: preserve-3d;
 }
 
-
-
-/* -------------------------------------------- */
-/*                   Utilities                  */
-/* -------------------------------------------- */
-
-.origin::after {
-	position: absolute;
-	top: 100%;
-	left: 100%;
-	width: .5rem;
-	height: .5rem;
-	content: '';
-	background: black;
-	border-radius: 50%;
-	transform: translateX(725%) translateY(-410%) translateZ(0rem);
-}
-
-
-
 /* ------------------ inputs ------------------ */
 
-.inputs {
+main > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -134,7 +114,7 @@ ul {
 
 /* add new styling to input sliders */
 
-.inputs input[type=range] {
+main > div input[type=range] {
 	width: 100%;
 	height: 1rem;
 	background: var(--accent-dark);
@@ -145,7 +125,7 @@ ul {
 	appearance: none;
 }
 
-.inputs input[type=range]::-webkit-slider-thumb {
+main > div input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -161,7 +141,7 @@ ul {
 
 /* ------------- background shapes ------------ */
 
-.background {
+main > section > article > div {
     width: 100cqw;
     height: 100cqw;
 
@@ -173,7 +153,7 @@ ul {
 	transform-origin: center center 0cqw;
 }
 
-.background > div:nth-of-type(1) {
+main > section > article > div > div:nth-of-type(1) {
 	width: 80%;
 	height: 70%;
 	position: absolute;
@@ -191,7 +171,9 @@ ul {
 	transform: translateZ(-15cqw) translateY(40cqw) rotateX(90deg) translateX(10cqw);
 }
 
-.background > div:nth-of-type(2) {
+/* checkered backtground gradient: https://gist.github.com/dfrankland/f6fed3e3ccc42e3de482b324126f9542 */
+
+main > section > article > div > div:nth-of-type(2) {
 	width: 80%;
 	height: 70%;
 	position: absolute;

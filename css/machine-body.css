@@ -2,7 +2,7 @@
 /*                   Main body                  */
 /* -------------------------------------------- */
 
-.machine > section > ul:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(1) {
 	width: 50cqw;
 	height: 50cqw;
 	transform-style: preserve-3d;
@@ -14,7 +14,7 @@
 }
 
 
-.machine > section > ul:nth-of-type(1) > li {
+main > section > article > section > ul:nth-of-type(1) > li {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -28,37 +28,37 @@
 
 
 /* front */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(1) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(1) {
 	transform: rotateY(0deg) translateZ(25cqw);
 	background: var(--primary);
 }
 
 /* back */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(2) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(2) {
 	transform: rotateY(180deg) translateZ(25cqw);
 	background: var(--primary);
 }
 
 /* right */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(3) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(3) {
 	transform: rotateY(90deg) translateZ(25cqw);
 	background: var(--primary);
 }
 
 /* left */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(4) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(4) {
 	transform: rotateY(-90deg) translateZ(25cqw);
 	background: var(--primary);
 }
 
 /* top */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(5) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(5) {
 	transform: rotateX(90deg) translateZ(25cqw);
 	background: var(--primary);
 }
 
 /* bottom */
-.machine > section > ul:nth-of-type(1) > li:nth-of-type(6) {
+main > section > article > section > ul:nth-of-type(1) > li:nth-of-type(6) {
 	transform: rotateX(-90deg) translateZ(25cqw);
 	background: var(--primary);
 }
