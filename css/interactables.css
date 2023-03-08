@@ -56,7 +56,7 @@ html:has(head[data-speedcontrol-value="2"]) main {
 }
 
 html:has(head[data-speedcontrol-value="3"]) main {
-	--loader-speed: 6s;
+	--loader-speed: .6s;
 }
 
 html:has(head[data-speedcontrol-value="4"]) main {
@@ -77,8 +77,7 @@ html:has(head[data-speedcontrol-value="4"]) main {
 /* ---- Stop turning anim when door is open --- */
 
 .machine:has( > section > ul:nth-of-type(4) > li:nth-of-type(9) input:checked) > section > ul:nth-of-type(3) > li:nth-of-type(4)::before {
-	/* animation: spin 0s linear infinite; */
-	animation-play-state: paused;
+	animation-play-state: paused !important;
 }
 
 
@@ -93,6 +92,12 @@ html:has(head[data-speedcontrol-value="4"]) main {
 
 /* ----------- Control panel inputs ----------- */
 
+/* input off */
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(1):checked) > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
+	animation-play-state: paused;
+}
+
+
 /* screen input: hamster */
 .machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "HAMSTER";
@@ -103,14 +108,32 @@ html:has(head[data-speedcontrol-value="4"]) main {
 	content: "";
 }
 
-/* screen input: Color */
+/* screen input: White */
 .machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(2):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "White";
 }
 
-/* screen input: White */
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(2):checked) > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
+	filter: grayscale(1);
+}
+
+/* screen input: Color */
 .machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(3):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "Color";
+}
+
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(3):checked) > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
+	filter: hue-rotate(0deg);
+	animation: spinHue 1s linear infinite, spin var(--loader-speed) linear infinite;
+}
+
+@keyframes spinHue {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
 }
 
 
@@ -127,12 +150,34 @@ html:has(head[data-speedcontrol-value="4"]) main {
 /* ---------------- Turbo mode ---------------- */
 
 .machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked {
-	background-color: var(--accent);
+	background: var(--accent);
+	filter: drop-shadow(0 0 .2rem var(--accent));
 }
 
 main:has(.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) {
 	--loader-speed: .1s;
 }
+
+body:has(.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) {
+/* rainbow gradient animation */
+	background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+	background-size: 1000% 1000%;
+	background-position: 0% 0%;
+	animation: rainbow 1s ease infinite;
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) > section {
 	animation: shake 1s linear infinite;

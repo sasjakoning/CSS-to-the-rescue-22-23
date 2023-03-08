@@ -1,13 +1,17 @@
 
 :root {
-	--background: hsl(0, 0%, 48%);
-	--primary: hsl(283, 30%, 95%);
-	--secondary: hsl(283, 30%, 90%);
-	--tertiary: hsl(283, 30%, 85%);
-	--accent: #2196F3;
+	--background: hsl(0, 0%, 32%);
+	--primary: radial-gradient(circle, rgb(241, 241, 255) 40%, rgba(233,238,255,1) 100%);
+	--secondary: radial-gradient(circle, rgb(241, 241, 255) 40%, rgba(189,196,255,1) 100%);
+	--tertiary: radial-gradient(circle, rgb(206, 212, 235) 40%, rgb(176, 181, 224)100%);
+	--accent: hsl(207, 90%, 54%);
+	--accent-dark: hsl(0, 0%, 30%);
+	--dark: hsl(0, 0%, 10%);
+	--light: hsl(0, 0%, 100%);
 
-	--metallic-gradient: linear-gradient(70deg, rgb(140, 145, 150) 8%, rgba(155,162,166,1) 20%, rgba(221,228,232,1) 40%, rgba(221,228,232,1) 49%, rgba(155,162,166,1) 67%, rgb(140, 145, 150) 91%);
-	--metallic: rgb(140, 145, 150);
+	--metallic-gradient: linear-gradient(70deg, rgb(125, 136, 146) 8%, rgb(143, 157, 165) 20%, rgb(212, 224, 232) 40%, rgb(212, 224, 232) 49%, rgb(143, 157, 165) 67%, rgb(125, 136, 146) 91%);
+	--metallic-gradient-soft: linear-gradient(70deg, rgb(165, 175, 184) 0%, rgb(212, 224, 232) 40%, rgb(212, 224, 232) 60%, rgb(165, 175, 184) 100%);
+	--metallic: rgb(125, 136, 146);
 
 	--rotateY: 332deg;
 	--rotateX: 0deg;
@@ -47,9 +51,10 @@ ul {
 /* ----------- viewport of 3d object ---------- */
 
 .viewport {
-	background: var(--background);
+	/* background: var(--background); */
 	width: clamp(10rem, 100%, 60rem);
-	aspect-ratio: 1/1;
+	height: clamp(10rem, 100%, 100vh);
+	/* aspect-ratio: 1/1; */
 	position: relative;
 	perspective: 600px;
 	display: grid;
@@ -105,7 +110,7 @@ ul {
 	width: .5rem;
 	height: .5rem;
 	content: '';
-	background-color: black;
+	background: black;
 	border-radius: 50%;
 	transform: translateX(725%) translateY(-410%) translateZ(0rem);
 }
@@ -122,6 +127,32 @@ ul {
 
 	position: fixed;
 	bottom: 2rem;
+
+	gap: 1rem;
+}
+
+
+/* add new styling to input sliders */
+
+.inputs input[type=range] {
+	width: 100%;
+	height: 1rem;
+	background: var(--accent-dark);
+	border-radius: 1rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.inputs input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: var(--accent);
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 
@@ -130,9 +161,11 @@ ul {
 /* ------------- background shapes ------------ */
 
 .background {
-	width: 100%;
-	height: 100%;
+    width: 100cqw;
+    height: 100cqw;
+
 	position: absolute;
+	pointer-events: none;
 
 	transform-style: preserve-3d;
 
@@ -145,7 +178,7 @@ ul {
 	position: absolute;
 	border-bottom-left-radius: 6cqw;
 	border-bottom-right-radius: 6cqw;
-	background-color: rgb(52, 52, 52);
+	background: rgb(52, 52, 52);
     background-image:
       linear-gradient(45deg, white 25%, transparent 25%), 
       linear-gradient(135deg, white 25%, transparent 25%),
