@@ -133,3 +133,17 @@ At this point I started to struggle a bit with the complexity of the CSS and the
 ## 📚 Final version 📚
 
 For the final version of the machine I changed the original pink colors to be more white and realistic. I added metallic colors to the buttons and the machine itself. I added several new interactions and worked with CSS features I had previously not worked with before. These include using filters with hue-rotate to create a color rainbow effect and used more complex gradients to create checkers patterns for the floor.
+
+<img src="images-readme/final.gif" alt="Washing Machine V3" width="300">
+
+<br>
+<hr>
+<br>
+
+## 📚 Final thoughts 📚
+
+All together I'm quite happy with what I created for this project. I started off with the mindset that I wanted to make something not too big, so I could actually finish the project within the set time frame. By choosing to do something simple, in this case a washing machine, I was able to dive deeper into new technologies and add little easter eggs and fun interactions.
+
+<br>
+
+Every second I spend typing CSS helps me get better and better at it. There is still alot to learn and many new features to come in the future. I'm excited to see what the future of CSS will bring and how I can use it to create more interesting and interactive websites.
