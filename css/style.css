@@ -4,20 +4,16 @@
 	--primary: hsl(283, 30%, 95%);
 	--secondary: hsl(283, 30%, 90%);
 	--tertiary: hsl(283, 30%, 85%);
+	--accent: #2196F3;
 
-	--side-1: rgba(250, 255, 91, 0.8);
-	--side-2: rgba(94, 255, 91, 0.8);
-	--side-3: rgba(91, 255, 255, 0.8);
-	--side-4: rgba(255, 91, 219, 0.8);
-	--side-5: rgba(53, 57, 255, 0.8);
-	--side-6: rgba(255, 91, 91, 0.8);
-	--side-7: rgba(159, 91, 255, 0.8);
-	--side-8: rgba(255, 181, 91, 0.8);
+	--metallic-gradient: linear-gradient(70deg, rgb(140, 145, 150) 8%, rgba(155,162,166,1) 20%, rgba(221,228,232,1) 40%, rgba(221,228,232,1) 49%, rgba(155,162,166,1) 67%, rgb(140, 145, 150) 91%);
+	--metallic: rgb(140, 145, 150);
 
-	--rotateY: 0deg;
+	--rotateY: 332deg;
 	--rotateX: 0deg;
-	--translateZ: 0em;
-	--translateY: 0em;
+	--translateZ: 0rem;
+	--translateY: 0rem;
+	--translateX: -2rem;
 }
 
 
@@ -30,7 +26,6 @@ html, * {
 body {
 	background: var(--background);
 	font-family: 'Roboto', sans-serif;
-	padding: 1rem;
 	width: 100%;
 	height: 100vh;
 }
@@ -59,7 +54,7 @@ ul {
 	perspective: 600px;
 	display: grid;
 
-	overflow: hidden;
+	/* overflow: hidden; */
 	container-type: size;
 }
 
@@ -80,7 +75,17 @@ ul {
 
 	/* rotate: y var(--rotateY);
 	rotate: x var(--rotateX); */
-	transform: translateZ(var(--translateZ)) translateY(var(--translateY)) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+	transform: translateZ(var(--translateZ)) translateY(var(--translateY)) rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateX(var(--translateX));
+}
+
+.machine > section {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform-origin: center center 0cqw;
 }
 
 .machine ul, .machine li {
@@ -109,13 +114,56 @@ ul {
 
 /* ------------------ inputs ------------------ */
 
-main { 
-	display: flex;
-}
-
 .inputs {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	position: fixed;
+	bottom: 2rem;
+}
+
+
+
+
+/* ------------- background shapes ------------ */
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	transform-style: preserve-3d;
+
+	transform-origin: center center 0cqw;
+}
+
+.background > div:nth-of-type(1) {
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	border-bottom-left-radius: 6cqw;
+	border-bottom-right-radius: 6cqw;
+	background-color: rgb(52, 52, 52);
+    background-image:
+      linear-gradient(45deg, white 25%, transparent 25%), 
+      linear-gradient(135deg, white 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, white 75%),
+      linear-gradient(135deg, transparent 75%, white 75%);
+    background-size:12rem 12rem; /* Must be a square */
+    background-position:0 0, 6rem 0, 6rem -6rem, 0px 6rem; /* Must be half of one side of the square */
+
+	transform: translateZ(-15cqw) translateY(40cqw) rotateX(90deg) translateX(10cqw);
+}
+
+.background > div:nth-of-type(2) {
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	border-top-left-radius: 6cqw;
+	border-top-right-radius: 6cqw;
+	background: linear-gradient(180deg, rgba(103,166,155,1) 0%, rgba(103,166,155,1) 60%, rgba(189,126,81,1) 60%, rgba(189,126,81,1) 64%, rgba(167,81,62,1) 64%, rgba(167,81,62,1) 100%);
+
+	transform: translateZ(-50cqw) translateY(5cqw) rotateX(0deg) translateX(10cqw);
 }

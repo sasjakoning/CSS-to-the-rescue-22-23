@@ -2,7 +2,7 @@
 /*                  Loader door                 */
 /* -------------------------------------------- */
 
-.machine > ul:nth-of-type(4) {
+.machine > section > ul:nth-of-type(4) {
 	width: 5cqw;
 	height: 10cqw;
 	position: absolute;
@@ -12,54 +12,54 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > ul:nth-of-type(4) > li {
+.machine > section > ul:nth-of-type(4) > li {
 	position: absolute;
 	/* border: 2px solid red; */
 	width: 100%;
 	height: 100%;
-	background: var(--tertiary);
+	background: var(--metallic);
 
 	transform-origin: 50% 50% 12.07cqw;
 }
 
 /* --------------- Sides outside -------------- */
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(1) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(2) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(3) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(4) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(5) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(6) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(7) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(8) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
 }
@@ -68,7 +68,7 @@
 /* ----------------- Top side ----------------- */
 
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(9) {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) {
 	/* display: none; */
 	transform: translateY(-30%) translateX(-40%) translateZ(14.5cqw);
 	width: 24.5cqw;
@@ -77,13 +77,13 @@
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(9) > label {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) > label {
 	width: 100%;
 	height: 100%;
 	display: block;
 	background: transparent;
 
-	background-color: var(--tertiary);
+	background: var(--metallic-gradient);
 
 	clip-path: polygon(
 	0% 0%,
@@ -108,7 +108,7 @@
 	/* clip-path: url(../images/octagon-mask.svg#cp); */
 }
 
-.machine > ul:nth-of-type(4) > li:nth-of-type(9) > input {
+.machine > section > ul:nth-of-type(4) > li:nth-of-type(9) > input {
 	display: none;
 }
 
@@ -117,14 +117,14 @@
 /*                 Loader inside                */
 /* -------------------------------------------- */
 
-.machine > ul:nth-of-type(3){
+.machine > section > ul:nth-of-type(3){
 	position: absolute;
 }
 
 
 /* ------------------ Outside ----------------- */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) ul {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) ul {
 	width: 5cqw;
 	height: 9cqw;
 	position: absolute;
@@ -134,54 +134,54 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) > ul > li {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) > ul > li {
 	position: absolute;
-	border: 2px solid var(--secondary);
+	/* border: 2px solid var(--secondary); */
 	width: 100%;
 	height: 100%;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 
 	transform-origin: 50% 50% 10.864cqw;
 }
 
 /* --------------- Sides outside -------------- */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(1) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(2) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(3) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(4) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(5) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(6) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(7) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(8) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(1) li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
 }
@@ -189,7 +189,7 @@
 /* ----------------- Top side ----------------- */
 
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) ul {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) ul {
 	width: 2.5cqw;
 	height: 9cqw;
 	position: absolute;
@@ -199,9 +199,8 @@
 	/* transform-origin: 50% 50%; */
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) > ul > li {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) > ul > li {
 	position: absolute;
-	border-left: 2.5cqw solid var(--secondary);
 	border-top: .5cqw solid transparent;
 	border-bottom: .5cqw solid transparent;
 	height: 100%;
@@ -214,44 +213,44 @@
 
 /* --------------- Sides outside -------------- */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(1) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(1) {
 	rotate: 0deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(2) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(2) {
 	rotate: 45deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(3) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(3) {
 	rotate: 90deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(4) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(4) {
 	rotate: 135deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(5) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(5) {
 	rotate: 180deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(6) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(6) {
 	rotate: 225deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(7) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(7) {
 	rotate: 270deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(8) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(2) li:nth-of-type(8) {
 	rotate: 315deg;
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
 
@@ -259,7 +258,7 @@
 
 /* ------------------ Inside ------------------ */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) ul {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) ul {
 	width: 5cqw;
 	height: 7cqw;
 	position: absolute;
@@ -269,9 +268,9 @@
 	transform-origin: -190% 50%;
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) > ul > li {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) > ul > li {
 	position: absolute;
-	border: 2px solid var(--secondary);
+	/* border: 2px solid var(--secondary); */
 	width: 100%;
 	height: 100%;
 
@@ -280,59 +279,59 @@
 
 /* --------------- Sides inside --------------- */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(1) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(1) {
 	rotate: 0deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(2) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(2) {
 	rotate: 45deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(3) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(3) {
 	rotate: 90deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(4) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(4) {
 	rotate: 135deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(5) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(5) {
 	rotate: 180deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(6) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(6) {
 	rotate: 225deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(7) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(7) {
 	rotate: 270deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(8) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(3) li:nth-of-type(8) {
 	rotate: 315deg;
 	transform: rotateY(90deg);
-	background-color: var(--primary);
+	background-color: var(--metallic);
 }
 
 
 
 /* ----- Inside shape (inside the machine) ---- */
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(4) {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(4) {
 	width: 18cqw;
 	height: 18cqw;
 	position: absolute;
@@ -342,7 +341,7 @@
 	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.machine > ul:nth-of-type(3) > li:nth-of-type(4):before {
+.machine > section > ul:nth-of-type(3) > li:nth-of-type(4):before {
     content: "";
     position: absolute;
     width: 200%;
@@ -350,9 +349,9 @@
     top: -50%;
     left: -50%;
     z-index: -1;
-	background: url(../images-readme/washing-machine-ref.jpg) no-repeat center center;
+	background: url(../images/laundry.jpg) no-repeat center center;
 	background-size: cover;
-    animation: spin 1s linear infinite;
+    animation: spin var(--loader-speed) linear infinite;
 }
 
 @keyframes spin {

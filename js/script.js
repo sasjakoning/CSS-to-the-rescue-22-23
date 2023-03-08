@@ -1,35 +1,27 @@
-const rotateYSlider = document.getElementById('rotateY');
-document.documentElement.style.setProperty('--rotateY', rotateYSlider.value + 'deg');
+var ranges = document.querySelectorAll('[type=range]');
+var head = document.querySelector('head');
 
-const rotateXSlider = document.getElementById('rotateX');
-document.documentElement.style.setProperty('--rotateX', rotateYSlider.value + 'deg');
+var i = 0;
+while (i < ranges.length) {
+	ranges[i].addEventListener('input',function(){
+		slide(this);
+	});
+	// also set attributes onload of page
+	slide(ranges[i]);
+	i++;
+}
 
-const translateZSlider = document.getElementById('translateZ');
-document.documentElement.style.setProperty('--translateZ', rotateYSlider.value + 'em');
+function slide(s){
+	var sValue = s.value;
+	var sId = s.id;
 
-const translateYSlider = document.getElementById('translateY');
-document.documentElement.style.setProperty('--translateY', rotateYSlider.value + 'em');
+	head.setAttribute('data-'+sId+'-value',sValue);
+    console.log('data-'+sId+'-value',sValue)
 
-
-
-// edit the rotateY css variable based on the slider value
-rotateYSlider.addEventListener('input', (e) => {
-    document.documentElement.style.setProperty('--rotateY', e.target.value + 'deg');
-    }
-);
-
-// edit the rotateX css variable based on the slider value
-rotateXSlider.addEventListener('input', (e) => {
-    document.documentElement.style.setProperty('--rotateX', e.target.value + 'deg');
-    }
-);
-
-translateZSlider.addEventListener('input', (e) => {
-    document.documentElement.style.setProperty('--translateZ', e.target.value + 'em');
-    }
-);
-
-translateYSlider.addEventListener('input', (e) => {
-    document.documentElement.style.setProperty('--translateY', e.target.value + 'em');
-    }
-);
+	// Add an extra data-attr to divide the slider into 10 steps when there are 20 steps or more
+	var sMax = s.max;
+	if(sMax > 19) {
+		var sDec = sMax/10;
+		head.setAttribute('data-'+sId+'-X', Math.floor(sValue/sDec));
+	}
+}

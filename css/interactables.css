@@ -1,8 +1,72 @@
+/* --------- Adjust rotation and zoom --------- */
+
+html:has(head[data-rotatex-value="0"]) main  {
+	--rotateY: -40deg;
+}
+
+html:has(head[data-rotatex-value="1"]) main {
+	--rotateY: -20deg;
+}
+
+html:has(head[data-rotatex-value="2"]) main {
+	--rotateY: 0deg;
+}
+
+html:has(head[data-rotatex-value="3"]) main {
+	--rotateY: 20deg;
+}
+
+html:has(head[data-rotatex-value="4"]) main {
+	--rotateY: 40deg;
+}
+
+html:has(head[data-translatez-value="0"]) main {
+	--translateZ: 0rem;
+}
+
+html:has(head[data-translatez-value="1"]) main {
+	--translateZ: 4rem;
+}
+
+html:has(head[data-translatez-value="2"]) main {
+	--translateZ: 8rem;
+}
+
+html:has(head[data-translatez-value="3"]) main {
+	--translateZ: 12rem;
+}
+
+html:has(head[data-translatez-value="4"]) main {
+	--translateZ: 16rem;
+}
+
+
+/* ----------- Adjust spinning speed ---------- */
+
+html:has(head[data-speedcontrol-value="0"]) main  {
+	--loader-speed: 1.2s;
+}
+
+html:has(head[data-speedcontrol-value="1"]) main {
+	--loader-speed: 1s;
+}
+
+html:has(head[data-speedcontrol-value="2"]) main {
+	--loader-speed: .8s;
+}
+
+html:has(head[data-speedcontrol-value="3"]) main {
+	--loader-speed: 6s;
+}
+
+html:has(head[data-speedcontrol-value="4"]) main {
+	--loader-speed: .4s;
+}
 
 
 /* --------- Open loader door on click -------- */
 
-.machine > ul:nth-of-type(4):has(> li:nth-of-type(9) input:checked)  {
+.machine > section > ul:nth-of-type(4):has(> li:nth-of-type(9) input:checked)  {
 	rotate: Y -90deg;
 	transition: rotate .5s;
 	transition-timing-function: cubic-bezier(.17,.67,.57,1.37);
@@ -12,7 +76,7 @@
 
 /* ---- Stop turning anim when door is open --- */
 
-.machine:has(> ul:nth-of-type(4) > li:nth-of-type(9) input:checked) > ul:nth-of-type(3) > li:nth-of-type(4)::before {
+.machine:has( > section > ul:nth-of-type(4) > li:nth-of-type(9) input:checked) > section > ul:nth-of-type(3) > li:nth-of-type(4)::before {
 	/* animation: spin 0s linear infinite; */
 	animation-play-state: paused;
 }
@@ -21,7 +85,7 @@
 
 /* ----------- Open loader on click ----------- */
 
-.machine > ul:nth-of-type(2) > li > ul:nth-of-type(1):has(> li:nth-of-type(1) input:checked)  {
+.machine > section > ul:nth-of-type(2) > li > ul:nth-of-type(1):has(> li:nth-of-type(1) input:checked)  {
 	transform: translateZ(3.5cqw) translateX(-24.5cqw) translateY(-24.5cqw);
 }
 
@@ -30,22 +94,22 @@
 /* ----------- Control panel inputs ----------- */
 
 /* screen input: hamster */
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "HAMSTER";
 }
 
 /* screen input: White */
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(1):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(1):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "";
 }
 
 /* screen input: Color */
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(2):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(2):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "White";
 }
 
 /* screen input: White */
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(3):checked) > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(3):checked) > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > div::after {
 	content: "Color";
 }
 
@@ -53,7 +117,7 @@
 
 /* ----- Open bottom compartment on click ----- */
 
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > ul:nth-of-type(5) > li:nth-of-type(2) {
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(2) > form > input:nth-of-type(4):checked) > section > ul:nth-of-type(5) > li:nth-of-type(2) {
 	rotate: x 90deg;
 	transition: rotate .5s;
 }
@@ -62,20 +126,28 @@
 
 /* ---------------- Turbo mode ---------------- */
 
-.machine:has(> ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) {
+.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked {
+	background-color: var(--accent);
+}
+
+main:has(.machine > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) {
+	--loader-speed: .1s;
+}
+
+.machine:has( > section > ul:nth-of-type(2) > li > article > section:nth-of-type(1) > form:nth-of-type(1) > input:checked) > section {
 	animation: shake 1s linear infinite;
 }
  
 @keyframes shake {
-	0% { transform: rotate(0deg); }
-	10% { transform: rotate(5deg); }
-	20% { transform: rotate(-5deg); }
-	30% { transform: rotate(5deg); }
-	40% { transform: rotate(-5deg); }
-	50% { transform: rotate(5deg); }
-	60% { transform: rotate(-5deg); }
-	70% { transform: rotate(5deg); }
-	80% { transform: rotate(-5deg); }
-	90% { transform: rotate(5deg); }
-	100% { transform: rotate(0deg); }
+	0% { rotate:0deg; }
+	10% { rotate:5deg; }
+	20% { rotate:-5deg; }
+	30% { rotate:5deg; }
+	40% { rotate:-5deg; }
+	50% { rotate:5deg; }
+	60% { rotate:-5deg; }
+	70% { rotate:5deg; }
+	80% { rotate:-5deg; }
+	90% { rotate:5deg; }
+	100% { rotate:0deg; }
 }
