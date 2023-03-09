@@ -146,4 +146,13 @@ All together I'm quite happy with what I created for this project. I started off
 
 <br>
 
-Every second I spend typing CSS helps me get better and better at it. There is still alot to learn and many new features to come in the future. I'm excited to see what the future of CSS will bring and how I can use it to create more interesting and interactive websites.
+There are a few things I would have added to this project if I were to have more time. 
+
+- Include more accessibility using tabindex, prefers reduced motion and dark/light modes.
+- Add more interactables using different form elements and also newer technologies like datalists.
+- Play more with filters and blend modes.
+- Add more fun easter eggs.
+
+<br>
+
+Every second I spend typing CSS helps me get better and better at it. There is still a lot to learn and many new features to come in the future. I'm excited to see what the future of CSS will bring and how I can use it to create more interesting and interactive websites.
