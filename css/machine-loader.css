@@ -105,8 +105,12 @@ main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) > lab
 	100% 0%);
 }
 
-main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) > input {
-	display: none;
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9):has( input:focus) {
+	filter: drop-shadow(0 0 .5rem var(--focus));
+}
+
+main > section > article > section > ul:nth-of-type(4) > li:nth-of-type(9) label > input {
+	opacity: 0;
 }
 
 

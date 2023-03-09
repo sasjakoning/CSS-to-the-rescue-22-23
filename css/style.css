@@ -8,6 +8,7 @@
 	--accent-dark: hsl(0, 0%, 30%);
 	--dark: hsl(0, 0%, 10%);
 	--light: hsl(0, 0%, 100%);
+	--focus: rgb(255, 0, 106);
 
 	--metallic-gradient: linear-gradient(70deg, rgb(125, 136, 146) 8%, rgb(143, 157, 165) 20%, rgb(212, 224, 232) 40%, rgb(212, 224, 232) 49%, rgb(143, 157, 165) 67%, rgb(125, 136, 146) 91%);
 	--metallic-gradient-soft: linear-gradient(70deg, rgb(165, 175, 184) 0%, rgb(212, 224, 232) 40%, rgb(212, 224, 232) 60%, rgb(165, 175, 184) 100%);
@@ -25,6 +26,11 @@ html, * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+*:focus, *:focus-visible {
+	outline: transparent;
+	filter: drop-shadow(0 0 .5rem var(--focus)) !important;
 }
 
 body {

@@ -6,6 +6,10 @@ This repository is all about the course CSS To The Rescue of the minor Web Desig
 <hr>
 <br>
 
+### Check out the live project [here](https://sasjakoning.github.io/CSS-to-the-rescue-22-23/)
+
+Due to the use of new CSS technologies, this project is exclusively made for Chrome. However, other browsers will stay functional to some extend.
+
 ## 🗒️ Debrief 🗒️
 
 The goal of this course is to experiment with CSS to create something unique and interesting. I'll look into the possibilities of CSS and new experimental features. In the end I'll not only turn in something visually pleasing, but also show of my experiments and the process of creating it.
