@@ -112,6 +112,7 @@ main > div {
 	align-items: center;
 
 	position: fixed;
+	z-index: 100;
 	bottom: 2rem;
 
 	gap: 1rem;
